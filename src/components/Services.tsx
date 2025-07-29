@@ -30,13 +30,13 @@ const Services = () => {
     {
       icon: <Heart className="w-8 h-8" />,
       title: "Design de Sobrancelhas",
-      description: "Modelagem perfeita para realçar seu olhar",
+      description: "Modelagem perfeita  e profissional para realçar seu olhar",
       price: "A partir de R$ 40"
     },
     {
       icon: <Star className="w-8 h-8" />,
       title: "Maquiagem",
-      description: "Maquiagem profissional para eventos especiais",
+      description: "Maquiagem profissional para eventos e ocasiões especiais",
       price: "A partir de R$ 100"
     }
   ];
