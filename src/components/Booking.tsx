@@ -79,12 +79,12 @@ Gostaria de confirmar este agendamento! 💖`;
         </div>
 
         <div className="max-w-4xl mx-auto justify-center">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
             {/* Calendar Section */}
             <Card className="p-6">
   <CardHeader className="pb-4">
     <CardTitle className="flex items-center gap-2">
-      <CalendarIcon className="w-5 h-5" />
+      <CalendarIcon className="w-6 h-6" />
       Escolha a Data
     </CardTitle>
     <CardDescription>
@@ -93,16 +93,18 @@ Gostaria de confirmar este agendamento! 💖`;
   </CardHeader>
 
   {/* Centraliza horizontalmente o calendário */}
-  <CardContent className="flex justify-center">
+  <CardContent className="flex justify-center p-0">
+  <div className="origin-top scale-125"> {/* 25 % maior */}
     <Calendar
       mode="single"
       selected={selectedDate}
       onSelect={setSelectedDate}
       disabled={(date) => date < new Date() || date.getDay() === 0}
-      className={cn("pointer-events-auto")} // remove w-full p/ não esticar
+      className="pointer-events-auto"
       locale={ptBR}
     />
-  </CardContent>
+  </div>
+</CardContent>
 </Card>
 
 
