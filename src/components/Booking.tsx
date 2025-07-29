@@ -94,17 +94,15 @@ Gostaria de confirmar este agendamento! 💖`;
 
   {/* Centraliza horizontalmente o calendário */}
   <CardContent className="flex justify-center p-0">
-  <div className="origin-top scale-125"> {/* 25 % maior */}
     <Calendar
       mode="single"
       selected={selectedDate}
       onSelect={setSelectedDate}
       disabled={(date) => date < new Date() || date.getDay() === 0}
-      className="pointer-events-auto"
+      className={cn("pointer-events-auto")} // remove w-full p/ não esticar
       locale={ptBR}
     />
-  </div>
-</CardContent>
+  </CardContent>
 </Card>
 
 
